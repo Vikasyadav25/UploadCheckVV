@@ -11,138 +11,155 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="page-loader" data-page-loader role="status" aria-live="polite">
+      <div class="page-loader__mark" aria-hidden="true"></div>
+      <span>Loading portfolio</span>
+    </div>
+
     <div class="ambient ambient--one" aria-hidden="true"></div>
     <div class="ambient ambient--two" aria-hidden="true"></div>
     <div class="grain" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="brand-mark" href="#home" aria-label="Vanshika Pandey home">VP</a>
+      <a class="brand-mark" href="#home" aria-label="Folioblox home">Vanshika Pandey</a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
         <a href="#dribbble">Dribbble</a>
         <a href="#behance">Behance</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#medium">Medium</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-resume-link" href="assets/documents/vanshika-product-designer-resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a href="assets/documents/vanshika-product-designer-resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a class="nav-resume-link" href="#contact">Get in touch</a>
       </nav>
-      <a class="header-cta" href="assets/documents/vanshika-product-designer-resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      <a class="header-cta" href="#contact">Get in touch</a>
     </header>
 
     <main id="home">
       <section class="hero section">
+        <div class="unicorn-hero-bg" style="width: 1440px; height: 900px" data-us-project="mjJ6QOFvnrBxnrRPHhci" aria-hidden="true"></div>
         <div class="hero-copy reveal">
-          <p class="eyebrow">Product Designer / UI UX / Design Systems</p>
-          <h1>Curated product design work, presented with clarity.</h1>
-          <p class="lede">
-            I am Vanshika Pandey, a Bengaluru-based product designer creating mobile apps, dashboards, fintech flows,
-            web experiences, and UX case studies. This portfolio is focused on showing the work first.
-          </p>
-          <div class="hero-actions">
-            <a class="button button--primary" href="#showcase">View showcase</a>
-            <a class="button button--glass" href="mailto:vanshikapandey05@gmail.com">Hire / collaborate</a>
+          <p class="eyebrow">Hey, I'm a</p>
+          <h1>Creative Director</h1>
+        </div>
+
+        <div class="hero-side-copy reveal">
+          <h2>Great design should feel invisible.</h2>
+          <p>From logo to language, I build brands that connect and convert.</p>
+        </div>
+
+        <div class="hero-services reveal" aria-label="Creative services">
+          <div>
+            <span>#01</span>
+            <strong>Worked with 20+ clients</strong>
+          </div>
+          <div>
+            <span>#02</span>
+            <strong>1.5M+ views on Dribbble & Behance</strong>
+          </div>
+          <div>
+            <span>#03</span>
+            <strong>4.5 years of design experience</strong>
+          </div>
+          <div>
+            <span>#04</span>
+            <strong>Led design decisions with trend insight</strong>
           </div>
         </div>
 
-        <aside class="hero-visual glass-card reveal" aria-label="Portfolio overview">
-          <div class="summary-slider" data-summary-slider>
-            <div class="slider-topline">
-              <span data-summary-label>Dribbble</span>
-              <span data-summary-context>Visual Work</span>
+        <aside class="hero-visual glass-card reveal" aria-label="Portfolio profile links">
+          <div class="hero-profile-card">
+            <div class="hero-profile-top">
+              <span class="hero-profile-mark">VP</span>
+              <a href="https://dribbble.com/vanshikapandey05" target="_blank" rel="noreferrer" aria-label="Open Dribbble">‹</a>
+              <a href="https://www.behance.net/vanshikapandey1" target="_blank" rel="noreferrer" aria-label="Open Behance">›</a>
             </div>
-
-            <div class="summary-stage" aria-live="polite">
-              <article class="summary-card is-active" data-slide-status="active" data-summary-title="Dribbble" data-summary-type="Visual Work">
-                <span class="summary-kicker">Portfolio Channel</span>
-                <strong>Dribbble Summary</strong>
-                <p>Quick visual explorations showing mobile screens, landing concepts, interaction ideas, and polished UI direction. Best for scanning design taste, layout sense, and visual range.</p>
-                <div class="summary-meta">
-                  <span>1M+ views</span>
-                  <span>2K+ likes/saves</span>
-                </div>
-              </article>
-
-              <article class="summary-card" data-slide-status="next" data-summary-title="Behance" data-summary-type="Case Studies">
-                <span class="summary-kicker">Portfolio Channel</span>
-                <strong>Behance Summary</strong>
-                <p>Long-form case studies with clearer project storytelling, UX process, screens, and presentation quality. Best for reviewing problem framing, product thinking, and design depth.</p>
-                <div class="summary-meta">
-                  <span>13.3K views</span>
-                  <span>674 appreciations</span>
-                </div>
-              </article>
-
-              <article class="summary-card" data-slide-status="hidden" data-summary-title="Medium" data-summary-type="UX Writing">
-                <span class="summary-kicker">Portfolio Channel</span>
-                <strong>Medium Summary</strong>
-                <p>UX writing that explains the thinking behind design decisions. Useful for understanding research mindset, usability awareness, and how product choices are communicated.</p>
-                <div class="summary-meta">
-                  <span>3 reads</span>
-                  <span>UX thinking</span>
-                </div>
-              </article>
-
-              <article class="summary-card" data-slide-status="hidden" data-summary-title="Experience" data-summary-type="Product UX">
-                <span class="summary-kicker">Portfolio Area</span>
-                <strong>Experience Summary</strong>
-                <p>Hands-on product design work across mobile apps, dashboards, fintech journeys, onboarding flows, and reusable UI systems. Focused on clarity, usability, and delivery-ready design.</p>
-                <div class="summary-meta">
-                  <span>Product UX</span>
-                  <span>Design systems</span>
-                </div>
-              </article>
-
-              <article class="summary-card" data-slide-status="previous" data-summary-title="Projects" data-summary-type="Selected Work">
-                <span class="summary-kicker">Portfolio Area</span>
-                <strong>Projects Summary</strong>
-                <p>A focused library of selected work for quick scanning and deeper review. Projects cover apps, dashboards, websites, and product flows with a clean portfolio structure.</p>
-                <div class="summary-meta">
-                  <span>Apps</span>
-                  <span>Dashboards</span>
-                </div>
-              </article>
-
-              <div class="slider-controls" aria-label="Portfolio summary slider controls">
-                <button class="slider-button" type="button" data-summary-prev aria-label="Previous summary">Prev</button>
-                <div class="slider-dots" role="tablist" aria-label="Summary slides">
-                  <button type="button" class="is-active" data-summary-dot aria-label="Show Dribbble summary" aria-current="true"></button>
-                  <button type="button" data-summary-dot aria-label="Show Behance summary"></button>
-                  <button type="button" data-summary-dot aria-label="Show Medium summary"></button>
-                  <button type="button" data-summary-dot aria-label="Show Experience summary"></button>
-                  <button type="button" data-summary-dot aria-label="Show Projects summary"></button>
-                </div>
-                <button class="slider-button" type="button" data-summary-next aria-label="Next summary">Next</button>
-              </div>
+            <div class="hero-profile-proof">
+              <span></span>
+              <strong>Dribbble / Behance</strong>
             </div>
           </div>
         </aside>
       </section>
 
-      <section class="section profile-strip reveal" id="showcase" aria-label="Profile links">
-        <a class="profile-card glass-card" href="https://dribbble.com/vanshikapandey05" target="_blank" rel="noreferrer">
-          <span>Dribbble</span>
-          <strong>Mobile / Product / UX research</strong>
-          <div class="profile-proof" aria-label="Dribbble highlights">
-            <em>10K+ views</em>
-            <em>2K+ likes/saves</em>
+      <section class="brand-strip" aria-label="Trusted brands">
+        <p>Selected client work I have helped shape</p>
+        <div class="brand-strip__marquee">
+          <div class="brand-strip__list">
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=pepsico.com&sz=64" alt="" loading="lazy"></span>PepsiCo</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=mars.com&sz=64" alt="" loading="lazy"></span>Mars</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=pfizer.com&sz=64" alt="" loading="lazy"></span>Pfizer</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=stanleyblackanddecker.com&sz=64" alt="" loading="lazy"></span>SBD</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=upify.com&sz=64" alt="" loading="lazy"></span>Upify Digital</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=nickelfox.com&sz=64" alt="" loading="lazy"></span>Nickelfox</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=telepay.net&sz=64" alt="" loading="lazy"></span>TelePay</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=toandfrom.com&sz=64" alt="" loading="lazy"></span>To From</span>
+            <span><span class="brand-strip__logo brand-strip__logo--helios" aria-hidden="true"><svg viewBox="0 0 128 128" focusable="false"><defs><linearGradient id="helios-g1" x1="5" y1="34" x2="121" y2="91" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff2bb2"/><stop offset=".34" stop-color="#ffdf33"/><stop offset=".55" stop-color="#ff5b21"/><stop offset=".78" stop-color="#22c7f3"/><stop offset="1" stop-color="#c8eb8c"/></linearGradient><linearGradient id="helios-g2" x1="23" y1="7" x2="113" y2="59" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f5e6ff"/><stop offset=".42" stop-color="#36c7ff"/><stop offset="1" stop-color="#19b9e9"/></linearGradient><linearGradient id="helios-g3" x1="13" y1="72" x2="91" y2="121" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff4b99"/><stop offset="1" stop-color="#ff9a37"/></linearGradient></defs><circle cx="64" cy="64" r="61" fill="url(#helios-g1)"/><path d="M12 47c17-26 46-37 75-31 12 3 22 8 31 16-16-7-31-6-43 2-17 11-30 14-47 9-7-2-12-1-16 4Z" fill="url(#helios-g2)"/><path d="M3 73c16-18 34-22 57-13 20 8 39 7 60-11-8 31-34 54-66 55-25 1-43-10-51-31Z" fill="#fff" opacity=".88"/><path d="M4 84c14 17 31 25 53 25 18 0 35-6 49-18-18 8-36 6-55-6-20-13-34-13-47-1Z" fill="url(#helios-g3)"/><path d="M20 118c16 8 35 8 51 1 16-7 29-19 36-34-16 15-33 22-50 20-19-2-32 2-37 13Z" fill="#fff" opacity=".82"/></svg></span>Helios</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=leaguex.com&sz=64" alt="" loading="lazy"></span>LeagueX</span>
           </div>
-          <small>Open profile</small>
-        </a>
-        <a class="profile-card glass-card" href="https://www.behance.net/vanshikapandey1" target="_blank" rel="noreferrer">
-          <span>Behance</span>
-          <strong>13.3K views / 674 appreciations</strong>
-          <small>Open profile</small>
-        </a>
-        <a class="profile-card glass-card" href="https://medium.com/@vanshikapandey05" target="_blank" rel="noreferrer">
-          <span>Medium</span>
-          <strong>UX articles and case-study thinking</strong>
-          <small>Open profile</small>
-        </a>
+          <div class="brand-strip__list" aria-hidden="true">
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=pepsico.com&sz=64" alt="" loading="lazy"></span>PepsiCo</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=mars.com&sz=64" alt="" loading="lazy"></span>Mars</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=pfizer.com&sz=64" alt="" loading="lazy"></span>Pfizer</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=stanleyblackanddecker.com&sz=64" alt="" loading="lazy"></span>SBD</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=upify.com&sz=64" alt="" loading="lazy"></span>Upify Digital</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=nickelfox.com&sz=64" alt="" loading="lazy"></span>Nickelfox</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=telepay.net&sz=64" alt="" loading="lazy"></span>TelePay</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=toandfrom.com&sz=64" alt="" loading="lazy"></span>To From</span>
+            <span><span class="brand-strip__logo brand-strip__logo--helios" aria-hidden="true"><svg viewBox="0 0 128 128" focusable="false"><defs><linearGradient id="helios-g1b" x1="5" y1="34" x2="121" y2="91" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff2bb2"/><stop offset=".34" stop-color="#ffdf33"/><stop offset=".55" stop-color="#ff5b21"/><stop offset=".78" stop-color="#22c7f3"/><stop offset="1" stop-color="#c8eb8c"/></linearGradient><linearGradient id="helios-g2b" x1="23" y1="7" x2="113" y2="59" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f5e6ff"/><stop offset=".42" stop-color="#36c7ff"/><stop offset="1" stop-color="#19b9e9"/></linearGradient><linearGradient id="helios-g3b" x1="13" y1="72" x2="91" y2="121" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff4b99"/><stop offset="1" stop-color="#ff9a37"/></linearGradient></defs><circle cx="64" cy="64" r="61" fill="url(#helios-g1b)"/><path d="M12 47c17-26 46-37 75-31 12 3 22 8 31 16-16-7-31-6-43 2-17 11-30 14-47 9-7-2-12-1-16 4Z" fill="url(#helios-g2b)"/><path d="M3 73c16-18 34-22 57-13 20 8 39 7 60-11-8 31-34 54-66 55-25 1-43-10-51-31Z" fill="#fff" opacity=".88"/><path d="M4 84c14 17 31 25 53 25 18 0 35-6 49-18-18 8-36 6-55-6-20-13-34-13-47-1Z" fill="url(#helios-g3b)"/><path d="M20 118c16 8 35 8 51 1 16-7 29-19 36-34-16 15-33 22-50 20-19-2-32 2-37 13Z" fill="#fff" opacity=".82"/></svg></span>Helios</span>
+            <span><span class="brand-strip__logo"><img src="https://www.google.com/s2/favicons?domain=leaguex.com&sz=64" alt="" loading="lazy"></span>LeagueX</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
+        <div class="experience-heading reveal">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2>Proud moments, shared success</h2>
+          </div>
+          <p>Highlights from teams, products, and client work shaped across SaaS, fintech, mobile, and enterprise design.</p>
+        </div>
+
+        <div class="experience-showcase reveal">
+          <div class="experience-art" aria-hidden="true">
+            <span></span>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <a class="timeline-view" href="https://www.linkedin.com/company/tiger-analytics" target="_blank" rel="noreferrer" aria-label="Open Tiger Analytics LinkedIn profile">View</a>
+              <span>Jul 2024 - Present</span>
+              <h3>Tiger Analytics</h3>
+              <strong>Product Designer / Bengaluru</strong>
+              <p>Enterprise data products, dashboards, acquisition workflows, visualization tools, design systems, and dev handoff.</p>
+            </article>
+            <article class="timeline-item">
+              <a class="timeline-view" href="https://au.linkedin.com/company/upify-digital-marketing" target="_blank" rel="noreferrer" aria-label="Open Upify Digital LinkedIn profile">View</a>
+              <span>Jan 2024 - May 2024</span>
+              <h3>Upify Digital</h3>
+              <strong>Senior Product Designer / Remote, Australia</strong>
+              <p>Mobile-first product UX for Bali.love with user flows, IA, prototypes, and accessible UI systems.</p>
+            </article>
+            <article class="timeline-item">
+              <a class="timeline-view" href="https://www.linkedin.com/company/leaguex/" target="_blank" rel="noreferrer" aria-label="Open LeagueX LinkedIn profile">View</a>
+              <span>Sep 2023 - Dec 2023</span>
+              <h3>LeagueX</h3>
+              <strong>UI/UX Designer / Bengaluru</strong>
+              <p>Fantasy gaming web and mobile interfaces across onboarding, gameplay hierarchy, monetization, and retention.</p>
+            </article>
+            <article class="timeline-item">
+              <a class="timeline-view" href="https://in.linkedin.com/company/nickelfoxtech" target="_blank" rel="noreferrer" aria-label="Open Nickelfox Technologies LinkedIn profile">View</a>
+              <span>Apr 2022 - Aug 2023</span>
+              <h3>Nickelfox Technologies</h3>
+              <strong>Product Designer / Noida</strong>
+              <p>Fintech, ecommerce, service websites, mobile apps, component documentation, and junior designer mentoring.</p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section class="section showcase-section" id="dribbble">
@@ -273,39 +290,6 @@
             <h3>The way you think: How to build a Case Study</h3>
             <p>Storytelling structure for communicating product design decisions clearly.</p>
           </a>
-        </div>
-      </section>
-
-      <section class="section experience-section" id="experience">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Experience</p>
-          <h2>Product design experience across SaaS, fintech, mobile, and enterprise products.</h2>
-        </div>
-        <div class="timeline reveal">
-          <article class="timeline-item glass-card">
-            <span>Jul 2024 - Present</span>
-            <h3>Tiger Analytics</h3>
-            <strong>Product Designer / Bengaluru</strong>
-            <p>Leading UX/UI for enterprise data products, dashboards, data acquisition workflows, visualization tools, scalable design systems, accessibility, and design-to-dev handoff.</p>
-          </article>
-          <article class="timeline-item glass-card">
-            <span>Jan 2024 - May 2024</span>
-            <h3>Upify Digital</h3>
-            <strong>Senior Product Designer / Remote, Australia</strong>
-            <p>Designed mobile-first user flows, information architecture, prototypes, and accessible UI systems for Bali.love, improving user engagement and reducing design iteration friction.</p>
-          </article>
-          <article class="timeline-item glass-card">
-            <span>Sep 2023 - Dec 2023</span>
-            <h3>LeagueX</h3>
-            <strong>UI/UX Designer / Bengaluru</strong>
-            <p>Designed responsive mobile and web interfaces for fantasy gaming, covering onboarding, gameplay hierarchy, monetization flows, and retention-focused interaction design.</p>
-          </article>
-          <article class="timeline-item glass-card">
-            <span>Apr 2022 - Aug 2023</span>
-            <h3>Nickelfox Technologies</h3>
-            <strong>Product Designer / Noida</strong>
-            <p>Delivered product design across fintech, ecommerce, service websites, and mobile apps while supporting component documentation, developer handoff, and junior designer mentoring.</p>
-          </article>
         </div>
       </section>
 
