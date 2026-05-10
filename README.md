@@ -1,6 +1,6 @@
-# Vanshika Pandey Portfolio
+#
 
-A lightweight static portfolio website for Vanshika Pandey, focused on showcasing selected Dribbble shots, Behance case studies, and Medium writing.
+A lightweight static portfolio website for You, focused on showcasing selected Dribbble shots, Behance case studies, and Medium writing.
 
 ## Run Locally
 
