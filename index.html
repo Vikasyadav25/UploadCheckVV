@@ -17,13 +17,19 @@
 
     <header class="site-header">
       <a class="brand-mark" href="#home" aria-label="Vanshika Pandey home">VP</a>
-      <nav class="nav-links" aria-label="Primary navigation">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
         <a href="#dribbble">Dribbble</a>
         <a href="#behance">Behance</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#medium">Medium</a>
         <a href="#contact">Contact</a>
+        <a class="nav-resume-link" href="assets/documents/vanshika-product-designer-resume.pdf" target="_blank" rel="noreferrer">Resume</a>
       </nav>
       <a class="header-cta" href="assets/documents/vanshika-product-designer-resume.pdf" target="_blank" rel="noreferrer">Resume</a>
     </header>
@@ -297,22 +303,32 @@
           <h2>Like the work? Let's create the next polished product experience.</h2>
           <p>Open to product design roles, freelance collaborations, and product teams that care about polished UX.</p>
           <div class="contact-actions">
-            <a class="button button--primary" href="mailto:vanshikapandey05@gmail.com">Email Vanshika</a>
-            <button class="button button--glass" type="button" data-copy="vanshikapandey05@gmail.com">Copy email</button>
-            <a class="button button--glass" href="tel:+916289281050">Call</a>
+            <button class="button button--primary" type="button" data-copy="vanshikapandey05@gmail.com">Copy Vanshika</button>
           </div>
-          <span class="copy-status" data-copy-status>vanshikapandey05@gmail.com / +91 6289281050</span>
+          <span class="copy-status" data-copy-status></span>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>Vanshika Pandey / Product Designer</span>
-      <div>
-        <a href="https://dribbble.com/vanshikapandey05" target="_blank" rel="noreferrer">Dribbble</a>
-        <a href="https://www.behance.net/vanshikapandey1" target="_blank" rel="noreferrer">Behance</a>
-        <a href="https://medium.com/@vanshikapandey05" target="_blank" rel="noreferrer">Medium</a>
-      </div>
+      <nav class="social-dock" aria-label="Portfolio profile links">
+        <a href="https://in.linkedin.com/in/vanshikapandey05" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+          <span>in</span>
+        </a>
+        <a href="https://dribbble.com/vanshikapandey05" target="_blank" rel="noreferrer" aria-label="Dribbble profile">
+          <span>Db</span>
+        </a>
+        <a href="https://www.behance.net/vanshikapandey1" target="_blank" rel="noreferrer" aria-label="Behance profile">
+          <span>Be</span>
+        </a>
+        <a href="https://medium.com/@vanshikapandey05" target="_blank" rel="noreferrer" aria-label="Medium profile">
+          <span>M</span>
+        </a>
+        <a href="assets/documents/vanshika-product-designer-resume.pdf" target="_blank" rel="noreferrer" aria-label="Resume PDF">
+          <span>CV</span>
+        </a>
+      </nav>
     </footer>
 
     <script src="script.js"></script>
