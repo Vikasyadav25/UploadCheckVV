@@ -3,7 +3,7 @@ const copyStatus = document.querySelector('[data-copy-status]');
 const siteHeader = document.querySelector('.site-header');
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelectorAll('.nav-links a');
-const unicornProject = document.querySelector('[data-us-project]');
+const unicornProjects = document.querySelectorAll('[data-us-project]');
 const pageLoader = document.querySelector('[data-page-loader]');
 
 if (pageLoader) {
@@ -29,12 +29,12 @@ if (pageLoader) {
   window.setTimeout(hideLoader, 2200);
 }
 
-if (unicornProject) {
+if (unicornProjects.length) {
   const removeUnicornBadge = () => {
-    const badgeCandidates = unicornProject.querySelectorAll('a, button, span, div');
+    const badgeCandidates = document.querySelectorAll('[data-us-project] a, [data-us-project] button, [data-us-project] span, [data-us-project] div');
 
     badgeCandidates.forEach((element) => {
-      if (element === unicornProject || element.querySelector('canvas, iframe')) return;
+      if (element.matches('[data-us-project]') || element.querySelector('canvas, iframe')) return;
 
       const text = element.textContent?.trim().toLowerCase() || '';
       const href = element.getAttribute('href') || '';
@@ -59,7 +59,9 @@ if (unicornProject) {
   };
 
   const badgeObserver = new MutationObserver(removeUnicornBadge);
-  badgeObserver.observe(unicornProject, { childList: true, subtree: true });
+  unicornProjects.forEach((project) => {
+    badgeObserver.observe(project, { childList: true, subtree: true });
+  });
 
   if (window.UnicornStudio?.init) {
     initUnicornStudio();
