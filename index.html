@@ -50,28 +50,76 @@
         </div>
 
         <aside class="hero-visual glass-card reveal" aria-label="Portfolio overview">
-          <div class="orbital-card">
-            <span>Live profile snapshot</span>
-            <strong>Dribbble + Behance + Medium</strong>
-            <small>Top selected shots, case studies, and UX writing in one premium showcase.</small>
+          <div class="summary-slider" data-summary-slider>
+            <div class="slider-topline">
+              <span data-summary-label>Dribbble</span>
+              <span data-summary-context>Visual Work</span>
+            </div>
+
+            <div class="summary-stage" aria-live="polite">
+              <article class="summary-card is-active" data-slide-status="active" data-summary-title="Dribbble" data-summary-type="Visual Work">
+                <span class="summary-kicker">Portfolio Channel</span>
+                <strong>Dribbble Summary</strong>
+                <p>Quick visual explorations showing mobile screens, landing concepts, interaction ideas, and polished UI direction. Best for scanning design taste, layout sense, and visual range.</p>
+                <div class="summary-meta">
+                  <span>5 picks</span>
+                  <span>Mobile / Web</span>
+                </div>
+              </article>
+
+              <article class="summary-card" data-slide-status="next" data-summary-title="Behance" data-summary-type="Case Studies">
+                <span class="summary-kicker">Portfolio Channel</span>
+                <strong>Behance Summary</strong>
+                <p>Long-form case studies with clearer project storytelling, UX process, screens, and presentation quality. Best for reviewing problem framing, product thinking, and design depth.</p>
+                <div class="summary-meta">
+                  <span>13.3K views</span>
+                  <span>674 appreciations</span>
+                </div>
+              </article>
+
+              <article class="summary-card" data-slide-status="hidden" data-summary-title="Medium" data-summary-type="UX Writing">
+                <span class="summary-kicker">Portfolio Channel</span>
+                <strong>Medium Summary</strong>
+                <p>UX writing that explains the thinking behind design decisions. Useful for understanding research mindset, usability awareness, and how product choices are communicated.</p>
+                <div class="summary-meta">
+                  <span>3 reads</span>
+                  <span>UX thinking</span>
+                </div>
+              </article>
+
+              <article class="summary-card" data-slide-status="hidden" data-summary-title="Experience" data-summary-type="Product UX">
+                <span class="summary-kicker">Portfolio Area</span>
+                <strong>Experience Summary</strong>
+                <p>Hands-on product design work across mobile apps, dashboards, fintech journeys, onboarding flows, and reusable UI systems. Focused on clarity, usability, and delivery-ready design.</p>
+                <div class="summary-meta">
+                  <span>Product UX</span>
+                  <span>Design systems</span>
+                </div>
+              </article>
+
+              <article class="summary-card" data-slide-status="previous" data-summary-title="Projects" data-summary-type="Selected Work">
+                <span class="summary-kicker">Portfolio Area</span>
+                <strong>Projects Summary</strong>
+                <p>A focused library of selected work for quick scanning and deeper review. Projects cover apps, dashboards, websites, and product flows with a clean portfolio structure.</p>
+                <div class="summary-meta">
+                  <span>Apps</span>
+                  <span>Dashboards</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="slider-controls" aria-label="Portfolio summary slider controls">
+              <button class="slider-button" type="button" data-summary-prev aria-label="Previous summary">Prev</button>
+              <div class="slider-dots" role="tablist" aria-label="Summary slides">
+                <button type="button" class="is-active" data-summary-dot aria-label="Show Dribbble summary" aria-current="true"></button>
+                <button type="button" data-summary-dot aria-label="Show Behance summary"></button>
+                <button type="button" data-summary-dot aria-label="Show Medium summary"></button>
+                <button type="button" data-summary-dot aria-label="Show Experience summary"></button>
+                <button type="button" data-summary-dot aria-label="Show Projects summary"></button>
+              </div>
+              <button class="slider-button" type="button" data-summary-next aria-label="Next summary">Next</button>
+            </div>
           </div>
-          <div class="metric-strip">
-            <div>
-              <strong>5</strong>
-              <span>Dribbble picks</span>
-            </div>
-            <div>
-              <strong>5</strong>
-              <span>Behance studies</span>
-            </div>
-            <div>
-              <strong>3</strong>
-              <span>Medium reads</span>
-            </div>
-          </div>
-          <div class="floating-tile floating-tile--one">Glass UI</div>
-          <div class="floating-tile floating-tile--two">Premium</div>
-          <div class="floating-tile floating-tile--three">Showcase</div>
         </aside>
       </section>
 
@@ -303,7 +351,7 @@
           <h2>Like the work? Let's create the next polished product experience.</h2>
           <p>Open to product design roles, freelance collaborations, and product teams that care about polished UX.</p>
           <div class="contact-actions">
-            <button class="button button--primary" type="button" data-copy="vanshikapandey05@gmail.com">Copy Vanshika</button>
+            <button class="button button--primary" type="button" data-copy="vanshikapandey05@gmail.com">Copy Email</button>
           </div>
           <span class="copy-status" data-copy-status></span>
         </div>

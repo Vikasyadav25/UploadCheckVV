@@ -33,6 +33,57 @@ if (copyButton && copyStatus) {
   });
 }
 
+document.querySelectorAll('[data-summary-slider]').forEach((slider) => {
+  const slides = Array.from(slider.querySelectorAll('.summary-card'));
+  const dots = Array.from(slider.querySelectorAll('[data-summary-dot]'));
+  const previousButton = slider.querySelector('[data-summary-prev]');
+  const nextButton = slider.querySelector('[data-summary-next]');
+  const summaryLabel = slider.querySelector('[data-summary-label]');
+  const summaryContext = slider.querySelector('[data-summary-context]');
+  let activeIndex = 0;
+
+  const setActiveSlide = (nextIndex) => {
+    if (!slides.length) return;
+
+    activeIndex = (nextIndex + slides.length) % slides.length;
+    const previousIndex = (activeIndex - 1 + slides.length) % slides.length;
+    const nextSlideIndex = (activeIndex + 1) % slides.length;
+
+    slides.forEach((slide, index) => {
+      let status = 'hidden';
+
+      if (index === activeIndex) status = 'active';
+      if (index === previousIndex) status = 'previous';
+      if (index === nextSlideIndex) status = 'next';
+
+      slide.dataset.slideStatus = status;
+      slide.classList.toggle('is-active', index === activeIndex);
+    });
+
+    dots.forEach((dot, index) => {
+      const isActive = index === activeIndex;
+      dot.classList.toggle('is-active', isActive);
+      dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+    });
+
+    if (summaryLabel) {
+      summaryLabel.textContent = slides[activeIndex].dataset.summaryTitle || '';
+    }
+
+    if (summaryContext) {
+      summaryContext.textContent = slides[activeIndex].dataset.summaryType || '';
+    }
+  };
+
+  previousButton?.addEventListener('click', () => setActiveSlide(activeIndex - 1));
+  nextButton?.addEventListener('click', () => setActiveSlide(activeIndex + 1));
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => setActiveSlide(index));
+  });
+
+  setActiveSlide(activeIndex);
+});
+
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
